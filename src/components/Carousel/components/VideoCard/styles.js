@@ -18,14 +18,28 @@ export const VideoCardContainer = styled.a`
   display: flex;
   align-items: flex-end;
   padding: 16px;
-
-  transition: opacity .3s;
-  &:hover,
-  &:focus {
-    opacity: .5;
-  }
   
   &:not(:first-child) {
     margin-left: 20px;
+    width: 298px;
   }
 `;
+
+export const VideoCardTextLink = styled.a`
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+
+`;
+
+export const VideoDiv = styled.div`
+  text-align: center;
+  padding: 0;
+  width: 298px;
+  transition: opacity .3s;
+  
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
+  `;
