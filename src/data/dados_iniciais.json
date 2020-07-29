@@ -1,0 +1,119 @@
+{
+  "categorias": [
+    {
+      "titulo": "Gameplays",
+      "link": "https://www.alura.com.br/formacao-front-end",
+      "cor": "#6BD1FF",
+      "link_extra": {
+        "text": "Gameplays de Sea of Thieves com Davy Jones",
+        "url": "https://www.youtube.com/playlist?list=PLDRcEdRquEb3iS-eky3qO0GiEb2ZFJCX9"
+      },
+      "videos": [
+        {
+          "titulo": "SEA OF THIEVES - O Início do Gameplay, em 4K 60fps! (Português PT-BR no PC / Windows 10)",
+          "description": "Vídeo gameplay do jogo Sea of Thieves, disponível para PC (Windows 10) e Xbox One.",
+          "url": "https://www.youtube.com/watch?v=DBGKtb7lbEk"
+        },
+        {
+          "titulo": "Sea of Thieves #1 - O INÍCIO DO JOGO DOS PIRATAS",
+          "url": "https://www.youtube.com/watch?v=foxwWwgBE4Y"
+        },
+        {
+          "titulo": "SEA OF THIEVES - Gameplay + Pirate Adventures!",
+          "url": "https://www.youtube.com/watch?v=ZHeJE5MgySg"
+        },
+        {
+          "titulo": "Sea of Thieves - Gameplay Part 1 - Sailing the Seas and Finding Treasure with Zanitor!",
+          "url": "https://www.youtube.com/watch?v=dZBya8InlE4"
+        },
+        {
+          "titulo": "Sea of Thieves - Encontrando os TESOUROS SECRETOS",
+          "url": "https://www.youtube.com/watch?v=gywONpzIEZQ"
+        },
+        {
+          "titulo": "Sea of Thieves #2 - PRIMEIRA BATALHA INSANA DE NAVIO",
+          "url": "https://www.youtube.com/watch?v=gCttALNYo9c"
+        },
+        {
+          "titulo": "Sea of Thieves FUNNIEST Clip Compilation! (Sea of Thieves Twitch Clips)",
+          "url": "https://www.youtube.com/watch?v=Dpu1Dze9-nQ"
+        }
+      ]
+    },
+    {
+      "titulo": "História",
+      "cor": "#00C86F",
+      "link_extra": {
+        "text": "Documentário sobre a era de ouro dos piratas",
+        "url": "https://www.youtube.com/watch?v=W6m1wzx3fsY"
+      },
+      "videos": [
+        {
+          "titulo": "OS PIRATAS MAIS TEMIDOS DOS SETE MARES",
+          "url": "https://www.youtube.com/watch?v=tFBQNczC_Iw"
+        }, 
+        {
+          "titulo": "O Demônio dos mares Davy Jones e o Holandês Voador",
+          "url": "https://www.youtube.com/watch?v=S2xCEuYFsHE"
+        },
+        {
+          "titulo": "Os piratas mais temidos da história!",
+          "url": "https://www.youtube.com/watch?v=GYyM_w1Gops"
+        },
+        {
+          "titulo": "The Golden Age of Piracy I PIRATES",
+          "url": "https://www.youtube.com/watch?v=YiFptwV_E2U"
+        },
+        {
+          "titulo": "Why Pirates Were Nothing Like You Think - Hilarious Helmet History",
+          "url": "https://www.youtube.com/watch?v=SF7Y2L58LdA"
+        }
+
+      ]
+    },
+    {
+      "titulo": "Filmes",
+      "cor": "#9cd33b",
+      "videos": [
+        {
+          "titulo": "Capitão Phillips",
+          "url": "https://www.youtube.com/watch?v=njk4K-HQzbg"
+        },
+        {
+          "titulo": "A Ilha da Garganta Cortada | Trailer",
+          "url": "https://www.youtube.com/watch?v=sxcxBBHVzu0"
+        },
+        {
+          "titulo": "Piratas do Caribe - A Maldição da Pérola Negra",
+          "url": "https://www.youtube.com/watch?v=Elrmw9cMh6Q"
+        },
+        {
+          "titulo": "A Ilha do Tesouro - 1934 - Legendado PT BR",
+          "url": "https://www.youtube.com/watch?v=GO2UwtKpuHk"
+        }
+      ]
+    },
+    {
+      "titulo": "Memes",
+      "cor": "orange",
+      "videos": [
+        {
+          "titulo": "Sea Of Thieves- CAPTAIN LOOK! (FULL VIDEO)",
+          "url": "https://www.youtube.com/watch?v=ZYrI6CWj4e0"
+        },
+        {
+          "titulo": "The best pirate I've ever seen (Meme compilation)",
+          "url": "https://www.youtube.com/watch?v=_7d4B-9Pv84"
+        },
+        {
+          "titulo": "Best Pirate I've Ever Seen Meme Compilation",
+          "url": "https://www.youtube.com/watch?v=wwM3SBqEGI4"
+        },
+        {
+          "titulo": "The best pirate i've ever seen",
+          "url": "https://youtu.be/2W6vp6hq-QE?t=14"
+        }
+      ]
+    }
+  ]
+}
