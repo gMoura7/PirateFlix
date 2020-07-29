@@ -2,7 +2,7 @@
   "categorias": [
     {
       "titulo": "Gameplays",
-      "link": "https://www.alura.com.br/formacao-front-end",
+      "link": "https://pirateflix.vercel.app/",
       "cor": "#6BD1FF",
       "link_extra": {
         "text": "Gameplays de Sea of Thieves com Davy Jones",
