@@ -1,0 +1,5 @@
+
+.cleanButton{
+    background-color: var(--blackLighter) !important;
+    color: var(--black)  !important;
+}
