@@ -1,5 +1,5 @@
-import React from 'react';
-import { VideoCardContainer, VideoCardTextLink, VideoDiv } from './styles';
+import React, { useState } from 'react';
+import { VideoCardContainer, VideoDiv, VideoCardTitle } from './styles';
 
 function getYouTubeId(youtubeURL) {
   return youtubeURL
@@ -11,9 +11,10 @@ function getYouTubeId(youtubeURL) {
 
 
 function VideoCard({ videoTitle, videoURL, categoryColor }) {
+  const [showTitle, setShowTitle] = useState(false);
   const image = `https://img.youtube.com/vi/${getYouTubeId(videoURL)}/hqdefault.jpg`;
   return (
-    <VideoDiv>
+    <VideoDiv onMouseEnter={() => setShowTitle(true)} onMouseLeave={() => setShowTitle(false)}>
       <VideoCardContainer
         url={image}
         href={videoURL}
@@ -21,13 +22,8 @@ function VideoCard({ videoTitle, videoURL, categoryColor }) {
         style={{ borderColor: categoryColor || 'red' }}
         title={videoTitle}
       />
-      <VideoCardTextLink
-        url={image}
-        href={videoURL}
-        target="_blank"
-        style={{ borderColor: categoryColor || 'red' }}
-        title={videoTitle}
-        >{videoTitle}</VideoCardTextLink>
+      <VideoCardTitle>{videoTitle}</VideoCardTitle>
+
     </VideoDiv>
   );
 }
