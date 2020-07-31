@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { VideoCardContainer, VideoDiv, VideoCardTitle } from './styles';
 
 function getYouTubeId(youtubeURL) {
