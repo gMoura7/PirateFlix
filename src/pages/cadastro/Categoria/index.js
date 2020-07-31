@@ -8,12 +8,13 @@ const CadastrarCategoria = () => {
     return(
       <PageDefault>
         <h1>Cadastro de Categoria</h1>
-        <form>
+        <form noValidate>
           <InputField {...{
             label: "Nome",
             type: "text",
             name: "nomeCategoria",
-            required: true
+            required: true,
+            requiredMessage: "Nome é obrigatório"
           }} />
 
           <InputField as="textarea" {...{
@@ -21,6 +22,7 @@ const CadastrarCategoria = () => {
             type: "text",
             name: "descricaoCategoria",
             required: true,
+            requiredMessage: "Descrição é obrigatória",
             style: { height: "20vh", borderTop: "solid 24px rgba(0,0,0,0.0)", paddingTop: "0" }
           }} />
 
@@ -36,7 +38,8 @@ const CadastrarCategoria = () => {
             label: "Código de Segurança",
             type: "text",
             name: "codeSec",
-            required: true
+            required: true,
+            requiredMessage: "O Código de Segurança é obrigatório"
           }} />
 
           <Button>Salvar</Button>

@@ -6,6 +6,9 @@ function InputField(props) {
         <Container>
             <CategoryInput { ...props } />
             <label htmlFor={ props.name }>{ props.label }</label>
+            { props.requiredMessage && (
+                <span className="error">{ props.requiredMessage }</span>
+            )}
         </Container>
     )
 }

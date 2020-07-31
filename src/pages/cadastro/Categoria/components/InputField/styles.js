@@ -45,7 +45,7 @@ export const CategoryInput = styled.input`
     &:invalid {
         border-bottom: 2px solid red;
     }
-    
+
     &:focus {
         border-bottom: 2px solid var(--primary);
     }
@@ -54,4 +54,13 @@ export const CategoryInput = styled.input`
 
 export const Container = styled.div`
     position: relative;
+
+    span {
+        color: red;
+        display: none;
+    }
+
+    input:invalid ~ span, textarea:invalid ~ span{
+        display: block;
+    }
 `;
