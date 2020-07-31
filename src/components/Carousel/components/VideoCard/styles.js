@@ -30,8 +30,8 @@ export const VideoCardTitle = styled.span`
   position: absolute;
   opacity: 0;
   pointer-events: none;
-  left: 0%;
-  right: 0%;
+  left:  0.75%;
+  right: 0.75%;
   bottom: 10%;
   font-size: 16px;
   transition: opacity 0.3s;

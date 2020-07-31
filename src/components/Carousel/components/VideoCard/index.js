@@ -11,10 +11,9 @@ function getYouTubeId(youtubeURL) {
 
 
 function VideoCard({ videoTitle, videoURL, categoryColor }) {
-  const [showTitle, setShowTitle] = useState(false);
   const image = `https://img.youtube.com/vi/${getYouTubeId(videoURL)}/hqdefault.jpg`;
   return (
-    <VideoDiv onMouseEnter={() => setShowTitle(true)} onMouseLeave={() => setShowTitle(false)}>
+    <VideoDiv>
       <VideoCardContainer
         url={image}
         href={videoURL}
