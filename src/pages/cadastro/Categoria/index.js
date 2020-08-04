@@ -9,8 +9,10 @@ const CadastrarCategoria = () => {
         nome: '',
         descricao: '',
         cor: '#CFB53B',
-        codeSec: ''
+        codeSec: '',
+        categoriaEnviada: false
       }
+
   const [categorias, setCategorias] = useState([])
   const [values, setValues] = useState(valoresIniciais);
 
@@ -25,12 +27,27 @@ const CadastrarCategoria = () => {
     setValue(e.target.getAttribute('name'), e.target.value);
   }
 
+  function formValidation(state){
+    const invalids = Object.keys(state).filter((key) => {
+      return state[key] === "";
+    });
+    
+    return (invalids.length === 0 ? true : false);
+  }
+
   function handleSubmit(e){
     e.preventDefault();
     if(e.target.name === "delCategoria"){
       setValues(valoresIniciais);
       return;
     }
+    const ValidForm = formValidation(values);
+    setValues({...values, categoriaEnviada: true});
+
+    if (! ValidForm){
+      return false;
+    }
+
     setCategorias([...categorias, values]);
     setValues(valoresIniciais);
   }
@@ -45,7 +62,8 @@ const CadastrarCategoria = () => {
           name: "nome",
           value: values.nome,
           required: true,
-          requiredMessage: "Nome é obrigatório"
+          requiredMessage: "Nome é obrigatório",
+          submitted: values.categoriaEnviada
         }} />
 
         <InputField onChange={handleChange} as="textarea" {...{
@@ -55,6 +73,7 @@ const CadastrarCategoria = () => {
           value: values.descricao,
           required: true,
           requiredMessage: "Descrição é obrigatória",
+          submitted: values.categoriaEnviada,
           style: { height: "20vh", borderTop: "solid 24px rgba(0,0,0,0.0)", paddingTop: "0" }
         }} />
 
@@ -62,8 +81,7 @@ const CadastrarCategoria = () => {
           label: "Cor da categoria",
           type: "color",
           name: "cor",
-          value: values.cor,
-          required: true
+          value: values.cor
         }} />
 
         <InputField onChange={handleChange} {...{
@@ -72,7 +90,8 @@ const CadastrarCategoria = () => {
           name: "codeSec",
           value: values.codeSec,
           required: true,
-          requiredMessage: "O Código de Segurança é obrigatório"
+          requiredMessage: "O Código de Segurança é obrigatório",
+          submitted: values.categoriaEnviada
         }} />
 
         <Button name="addCategoria">Salvar</Button>

@@ -41,10 +41,6 @@ export const CategoryInput = styled.input`
         top: 5.75%;
         bottom: 68.97%;
     }
-    
-    &:invalid {
-        border-bottom: 2px solid red;
-    }
 
     &:focus {
         border-bottom: 2px solid var(--primary);
