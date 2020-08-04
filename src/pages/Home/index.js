@@ -1,15 +1,12 @@
 import React from 'react';
-import BannerMain from '../../components/BannerMain'
+import BannerMain from '../../components/BannerMain';
 import dadosIniciais from '../../data/dados_iniciais.json';
 import Carousel from '../../components/Carousel';
 import PageDefault from '../../components/PageDefault';
 
-
-
 function App() {
   return (
-    <div style={{ background: "#141414" }}>
-      
+    <div style={{ background: '#141414' }}>
       <PageDefault homepage>
 
         <BannerMain
@@ -29,12 +26,12 @@ function App() {
 
         <Carousel
           category={dadosIniciais.categorias[2]}
-        />      
+        />
 
         <Carousel
           category={dadosIniciais.categorias[3]}
-        /> 
-      
+        />
+
       </PageDefault>
 
     </div>

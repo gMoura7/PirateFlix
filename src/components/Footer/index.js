@@ -1,5 +1,5 @@
 import React from 'react';
-import { FooterBase } from './styles';
+import FooterBase from './styles';
 
 function Footer() {
   return (
@@ -14,7 +14,10 @@ function Footer() {
           Imersão React da Alura
         </a>
       </p>
-      <p> Por: {' '}
+      <p>
+        {' '}
+        Por:
+        {' '}
         <a href="https://github.com/GMouraP">Gustavo Moura</a>
       </p>
     </FooterBase>

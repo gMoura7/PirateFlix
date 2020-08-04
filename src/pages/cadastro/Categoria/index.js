@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import PageDefault from '../../../components/PageDefault';
 import InputField from './components/InputField';
-import { Button } from './styles';
+
+import Button from './styles';
 import './index.css';
 
 const CadastrarCategoria = () => {

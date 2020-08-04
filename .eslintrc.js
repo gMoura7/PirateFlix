@@ -22,6 +22,17 @@ module.exports = {
     'react',
   ],
   rules: {
-    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    'jsx-a11y/no-static-element-interactions': [
+      'error',
+      {
+        handlers: [
+          'onMouseDown',
+          'onMouseUp',
+          'onKeyDown',
+          'onKeyUp',
+        ],
+      },
+    ],
   },
 };
