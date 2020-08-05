@@ -5,6 +5,7 @@ import { CategoryInput, Container } from './styles';
 
 function InputField(props) {
   const { inputProps, labelProps } = props;
+  const hasValue = Boolean(inputProps.value.length);
 
   return (
     <Container>
@@ -16,6 +17,7 @@ function InputField(props) {
         value={inputProps.value}
         required={inputProps.required}
         style={inputProps.style}
+        hasValue={hasValue}
       />
       <label htmlFor={inputProps.name}>{ labelProps.label }</label>
       { labelProps.requiredMessage && labelProps.submitted && (
@@ -28,6 +30,9 @@ function InputField(props) {
 InputField.defaultProps = {
   inputProps: PropTypes.shape({
     as: 'input',
+    type: 'text',
+    value: '',
+    onChange: () => {},
     required: false,
     style: {},
   }),
@@ -41,10 +46,10 @@ InputField.defaultProps = {
 InputField.propTypes = {
   inputProps: PropTypes.shape({
     as: PropTypes.string,
-    onChange: PropTypes.func.isRequired,
-    type: PropTypes.string.isRequired,
+    type: PropTypes.string,
     name: PropTypes.string.isRequired,
-    value: PropTypes.string.isRequired,
+    value: PropTypes.string,
+    onChange: PropTypes.func,
     required: PropTypes.bool,
     style: PropTypes.object,
   }),

@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 export const CategoryInput = styled.input`
     display: block;
@@ -23,7 +23,7 @@ export const CategoryInput = styled.input`
         transition: 0.2s;
     }
 
-    &:focus + label, &:valid + label {
+    &:focus + label {
         padding: 8px 8px;
         font-size: 12px;
         line-height: 8px;
@@ -42,10 +42,17 @@ export const CategoryInput = styled.input`
         bottom: 68.97%;
     }
 
-    &:focus {
+    &:focus:not([type="color"]) {
         border-bottom: 2px solid var(--primary);
     }
 
+    ${({ hasValue }) => hasValue && css`
+        & + label {
+            padding: 8px 8px;
+            font-size: 12px;
+            line-height: 8px;
+        }
+    `}
 `;
 
 export const Container = styled.div`

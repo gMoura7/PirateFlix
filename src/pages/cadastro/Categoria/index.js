@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import PageDefault from '../../../components/PageDefault';
 import InputField from './components/InputField';
 
@@ -50,6 +50,20 @@ const CadastrarCategoria = () => {
     setCategorias([...categorias, values]);
     setValues(valoresIniciais);
   }
+
+  useEffect(() => {
+    const URL = 'http://127.0.0.1:8081/categorias';
+    fetch(URL).then(async (response) => {
+      const res = await response.json();
+      return res;
+    }).then((jsonResponse) => {
+      setCategorias([
+        ...jsonResponse,
+      ]);
+    });
+  }, [
+    values.nome,
+  ]);
 
   return (
     <PageDefault>
@@ -117,6 +131,13 @@ const CadastrarCategoria = () => {
         <Button name="addCategoria">Salvar</Button>
         <Button name="delCategoria" onClick={handleSubmit} className="cleanButton">Limpar</Button>
       </form>
+
+      {categorias.length === 0 && (
+      <div>
+        Loading...
+      </div>
+      )}
+
       <ul>
         {
           categorias.map((categoria, i) => (
