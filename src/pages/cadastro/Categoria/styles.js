@@ -1,6 +1,6 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 
-const Button = styled.button`
+export const Button = styled.button`
     width: 180px;
     margin: 28px 48px 28px 0;
     background-color: var(--primary);
@@ -23,4 +23,29 @@ const Button = styled.button`
     }
 `;
 
-export default Button;
+// Create the keyframes
+const spin = keyframes`
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+`;
+
+export const Spinner = styled.div`
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width:  100px;
+  height: 100px;
+  -webkit-animation: ${spin} 2s linear infinite; /* Safari */
+  animation: ${spin} 2s linear infinite;
+`;
+
+export const SpinnerWrapper = styled.div`
+  width: 16.67vh;
+  height: 16.67vh;
+  margin: auto;
+`;

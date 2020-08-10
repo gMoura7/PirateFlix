@@ -1,16 +1,16 @@
 {
-    "categorias": [
-        {
-            "id": 1,
-            "nome": "Front End",
-            "descricao": "Uma categoria show",
-            "cor": "#cbd1ff"
-        },
-        {
-            "id": 2,
-            "nome": "Back End",
-            "descricao": "Uma categoria show",
-            "cor": "#cbd1ff"
-        }
-    ]
+  "categorias": [
+    {
+      "nome": "Frontend",
+      "descricao": "HTML, CSS & Javascript",
+      "cor": "#1eff00",
+      "id": 1
+    },
+    {
+      "nome": "Backend",
+      "descricao": "Uma categoria show",
+      "cor": "#ffea00",
+      "id": 2
+    }
+  ]
 }

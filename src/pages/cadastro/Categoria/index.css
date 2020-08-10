@@ -3,3 +3,10 @@
     background-color: var(--blackLighter) !important;
     color: var(--black)  !important;
 }
+
+div.actions {
+    text-align: center;
+    padding: 0;
+    border: 0;
+    width: 100%;
+}

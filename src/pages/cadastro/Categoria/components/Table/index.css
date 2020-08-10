@@ -1,0 +1,36 @@
+table {
+  margin-bottom: 80px;
+  width: 100%;
+  word-wrap: break-word;
+  border-collapse: collapse;
+  border: 4px solid var(--primary);
+}
+
+thead > tr > th {
+  border: 4px solid var(--primary);
+  font-size: 24px;
+  font-weight: normal;
+  padding: 1%;
+  text-align: left;
+  max-width: 100vh;
+}
+
+tbody > tr > td {
+  padding: 12px 8px 12px 8px;
+  text-align: left;
+  font-size: 16px;
+  font-weight: normal;
+  max-width: 100vh;
+}
+
+th.largeCell, td.largeCell {
+  width: 80vh;
+}
+
+th.mediumCell, td.mediumCell {
+  width: 25vh;
+}
+
+th.smallCell, td.smallCell {
+  width: 10vh;
+}
