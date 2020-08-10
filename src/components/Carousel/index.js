@@ -50,7 +50,7 @@ function Carousel({
 }
 
 Carousel.defaultProps = {
-  ignoreFirstVideo: true,
+  ignoreFirstVideo: false,
 };
 
 Carousel.propTypes = {
