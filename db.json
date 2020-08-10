@@ -1,16 +1,150 @@
 {
   "categorias": [
     {
-      "nome": "Frontend",
-      "descricao": "HTML, CSS & Javascript",
-      "cor": "#1eff00",
+      "titulo": "Gameplays",
+      "descricao": "Gameplays de Sea of Thieves",
+      "cor": "#6BD1FF",
       "id": 1
     },
     {
-      "nome": "Backend",
-      "descricao": "Uma categoria show",
-      "cor": "#ffea00",
+      "titulo": "História",
+      "descricao": "Historia dos piratas",
+      "cor": "#00C86F",
       "id": 2
+    },
+    {
+      "titulo": "Filmes",
+      "descricao": "Filmes de piratas",
+      "cor": "#9cd33b",
+      "id": 3
+    },
+    {
+      "titulo": "Memes",
+      "descricao": "Memes de piratas",
+      "cor": "#ff7f00",
+      "id": 5
+    }
+  ],
+  "videos": [
+    {
+      "id": 1,
+      "categoriaId": 1,
+      "titulo": "SEA OF THIEVES - O Início do Gameplay",
+      "url": "https://www.youtube.com/watch?v=DBGKtb7lbEk"
+    },
+    {
+      "id": 2,
+      "categoriaId": 1,
+      "titulo": "Sea of Thieves #1 - O INÍCIO DO JOGO DOS PIRATAS",
+      "url": "https://www.youtube.com/watch?v=foxwWwgBE4Y"
+    },
+    {
+      "id": 3,
+      "categoriaId": 1,
+      "titulo": "SEA OF THIEVES - Gameplay + Pirate Adventures!",
+      "url": "https://www.youtube.com/watch?v=ZHeJE5MgySg"
+    },
+    {
+      "id": 4,
+      "categoriaId": 1,
+      "titulo": "Sea of Thieves - Gameplay Part 1 - Sailing the Seas and Finding Treasure with Zanitor!",
+      "url": "https://www.youtube.com/watch?v=dZBya8InlE4"
+    },
+    {
+      "id": 5,
+      "categoriaId": 1,
+      "titulo": "Sea of Thieves - Encontrando os TESOUROS SECRETOS",
+      "url": "https://www.youtube.com/watch?v=gywONpzIEZQ"
+    },
+    {
+      "id": 6,
+      "categoriaId": 1,
+      "titulo": "Sea of Thieves #2 - PRIMEIRA BATALHA INSANA DE NAVIO",
+      "url": "https://www.youtube.com/watch?v=gCttALNYo9c"
+    },
+    {
+      "id": 7,
+      "categoriaId": 1,
+      "titulo": "Sea of Thieves FUNNIEST Clip Compilation! (Sea of Thieves Twitch Clips)",
+      "url": "https://www.youtube.com/watch?v=Dpu1Dze9-nQ"
+    },
+    {
+      "id": 8,
+      "categoriaId": 2,
+      "titulo": "OS PIRATAS MAIS TEMIDOS DOS SETE MARES",
+      "url": "https://www.youtube.com/watch?v=tFBQNczC_Iw"
+    },
+    {
+      "id": 9,
+      "categoriaId": 2,
+      "titulo": "O Demônio dos mares Davy Jones e o Holandês Voador",
+      "url": "https://www.youtube.com/watch?v=S2xCEuYFsHE"
+    },
+    {
+      "id": 10,
+      "categoriaId": 2,
+      "titulo": "Os piratas mais temidos da história!",
+      "url": "https://www.youtube.com/watch?v=GYyM_w1Gops"
+    },
+    {
+      "id": 11,
+      "categoriaId": 2,
+      "titulo": "The Golden Age of Piracy I PIRATES",
+      "url": "https://www.youtube.com/watch?v=YiFptwV_E2U"
+    },
+    {
+      "id": 12,
+      "categoriaId": 2,
+      "titulo": "Why Pirates Were Nothing Like You Think - Hilarious Helmet History",
+      "url": "https://www.youtube.com/watch?v=SF7Y2L58LdA"
+    },
+    {
+      "id": 13,
+      "categoriaId": 3,
+      "titulo": "Capitão Phillips",
+      "url": "https://www.youtube.com/watch?v=njk4K-HQzbg"
+    },
+    {
+      "id": 14,
+      "categoriaId": 3,
+      "titulo": "A Ilha da Garganta Cortada | Trailer",
+      "url": "https://www.youtube.com/watch?v=sxcxBBHVzu0"
+    },
+    {
+      "id": 15,
+      "categoriaId": 3,
+      "titulo": "Piratas do Caribe - A Maldição da Pérola Negra",
+      "url": "https://www.youtube.com/watch?v=Elrmw9cMh6Q"
+    },
+    {
+      "id": 16,
+      "categoriaId": 3,
+      "titulo": "A Ilha do Tesouro - 1934 - Legendado PT BR",
+      "url": "https://www.youtube.com/watch?v=GO2UwtKpuHk"
+    },
+    {
+      "id": 21,
+      "categoriaId": 5,
+      "titulo": "Sea Of Thieves- CAPTAIN LOOK! (FULL VIDEO)",
+      "url": "https://www.youtube.com/watch?v=ZYrI6CWj4e0"
+    },
+    {
+      "id": 22,
+      "categoriaId": 5,
+      "titulo": "The best pirate I've ever seen (Meme compilation)",
+      "url": "https://www.youtube.com/watch?v=_7d4B-9Pv84"
+    },
+    {
+      "id": 23,
+      "categoriaId": 5,
+      "titulo": "Best Pirate I've Ever Seen Meme Compilation",
+      "url": "https://www.youtube.com/watch?v=wwM3SBqEGI4"
+    },
+    {
+      "id": 24,
+      "categoriaId": 5,
+      "titulo": "The best pirate i've ever seen",
+      "url": "https://youtu.be/2W6vp6hq-QE?t=14"
     }
   ]
 }
