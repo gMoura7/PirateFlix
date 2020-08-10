@@ -20,7 +20,7 @@ function InputField(props) {
         hasValue={hasValue}
       />
       <label htmlFor={inputProps.name}>{ labelProps.label }</label>
-      { labelProps.requiredMessage && labelProps.submitted && (
+      { labelProps.requiredMessage && (
         <span>{ labelProps.requiredMessage }</span>
       )}
     </Container>

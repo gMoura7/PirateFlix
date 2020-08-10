@@ -6,6 +6,7 @@ import InputField from './components/InputField';
 import { Button, Spinner, SpinnerWrapper } from './styles';
 import './index.css';
 import Table from './components/Table';
+import useForm from '../../../hooks/useForm';
 
 const CadastrarCategoria = () => {
   const valoresIniciais = {
@@ -13,12 +14,13 @@ const CadastrarCategoria = () => {
     descricao: '',
     cor: '#CFB53B',
     codeSec: '',
-    categoriaEnviada: false,
     submitMethod: 'POST',
   };
 
   const [categorias, setCategorias] = useState([]);
-  const [values, setValues] = useState(valoresIniciais);
+  const {
+    handleChange, editExistingData, clearForm, values,
+  } = useForm(valoresIniciais);
 
   function refreshCategorias() {
     const URL = window.location.hostname.includes('localhost')
@@ -52,12 +54,12 @@ const CadastrarCategoria = () => {
     if (actionType === 'edit') {
       const editableValues = {
         id: data.id,
-        nome: data.nome,
-        descricao: data.descricao,
+        nome: data.nome || '',
+        descricao: data.descricao || '',
         cor: data.cor,
         submitMethod: 'PUT',
       };
-      setValues({ ...values, ...editableValues });
+      editExistingData(editableValues);
     }
     if (actionType === 'add') {
       let URL = window.location.hostname.includes('localhost')
@@ -129,17 +131,6 @@ const CadastrarCategoria = () => {
 
   // Back to page setup
 
-  function setValue(key, value) {
-    setValues({
-      ...values,
-      [key]: value,
-    });
-  }
-
-  function handleChange(e) {
-    setValue(e.target.getAttribute('name'), e.target.value);
-  }
-
   function formValidation(state) {
     const invalids = Object.keys(state).filter((key) => state[key] === '');
 
@@ -149,19 +140,18 @@ const CadastrarCategoria = () => {
   function handleSubmit(e) {
     e.preventDefault();
     if (e.target.name === 'delCategoria') {
-      setValues(valoresIniciais);
+      clearForm(valoresIniciais);
       return;
     }
 
     const ValidForm = formValidation(values);
-    setValues({ ...values, categoriaEnviada: true });
 
     if (!ValidForm) {
       return;
     }
 
     handleAction('add', values);
-    setValues(valoresIniciais); // Reset state
+    clearForm(valoresIniciais); // Reset state
   }
 
   useEffect(refreshCategorias, [
@@ -183,7 +173,6 @@ const CadastrarCategoria = () => {
           labelProps={{
             label: 'Nome',
             requiredMessage: 'Nome é obrigatório',
-            submitted: values.categoriaEnviada,
           }}
         />
 
@@ -200,7 +189,6 @@ const CadastrarCategoria = () => {
           labelProps={{
             label: 'Descrição',
             requiredMessage: 'Descrição é obrigatória',
-            submitted: values.categoriaEnviada,
           }}
         />
 
@@ -227,7 +215,6 @@ const CadastrarCategoria = () => {
           labelProps={{
             label: 'Código de Segurança',
             requiredMessage: 'O Código de Segurança é obrigatório',
-            submitted: values.categoriaEnviada,
           }}
         />
 

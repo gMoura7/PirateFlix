@@ -1,25 +1,25 @@
 {
   "categorias": [
     {
-      "titulo": "Gameplays",
+      "nome": "Gameplays",
       "descricao": "Gameplays de Sea of Thieves",
       "cor": "#6BD1FF",
       "id": 1
     },
     {
-      "titulo": "História",
+      "nome": "História",
       "descricao": "Historia dos piratas",
       "cor": "#00C86F",
       "id": 2
     },
     {
-      "titulo": "Filmes",
+      "nome": "Filmes",
       "descricao": "Filmes de piratas",
       "cor": "#9cd33b",
       "id": 3
     },
     {
-      "titulo": "Memes",
+      "nome": "Memes",
       "descricao": "Memes de piratas",
       "cor": "#ff7f00",
       "id": 5

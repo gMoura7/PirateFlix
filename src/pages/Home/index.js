@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import BannerMain from '../../components/BannerMain';
-// import dadosIniciais from '../../data/dados_iniciais.json';
 import Carousel from '../../components/Carousel';
 import PageDefault from '../../components/PageDefault';
 import categoriasRepository from '../../repositories/categorias';
