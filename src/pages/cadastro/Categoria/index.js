@@ -78,7 +78,9 @@ const CadastrarCategoria = () => {
         body: JSON.stringify(newValues),
       }).then(async (response) => {
         const res = await response.status;
-        if (res === 201) refreshCategorias();
+        if (res === (data.submitMethod === 'PUT' ? 200 : 201)) {
+          refreshCategorias();
+        }
       });
     }
   }
