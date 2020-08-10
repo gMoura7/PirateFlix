@@ -15,6 +15,7 @@ function App() {
         setDadosIniciais(categoriesWithVdeos);
       });
   }, []);
+
   return (
     <div style={{ background: '#141414' }}>
       <PageDefault homepage>

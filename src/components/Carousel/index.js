@@ -9,7 +9,7 @@ function Carousel({
   ignoreFirstVideo,
   category,
 }) {
-  const categoryTitle = category.titulo;
+  const categoryTitle = category.nome;
   const categoryColor = category.cor;
   const categoryExtraLink = category.link_extra;
   const { videos } = category;
@@ -56,7 +56,7 @@ Carousel.defaultProps = {
 Carousel.propTypes = {
   ignoreFirstVideo: PropTypes.bool,
   category: PropTypes.shape({
-    titulo: PropTypes.string,
+    nome: PropTypes.string,
     link: PropTypes.string,
     cor: PropTypes.string,
     link_extra: PropTypes.object,

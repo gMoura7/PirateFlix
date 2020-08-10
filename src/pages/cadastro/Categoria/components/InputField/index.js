@@ -18,10 +18,19 @@ function InputField(props) {
         required={inputProps.required}
         style={inputProps.style}
         hasValue={hasValue}
+        list={`suggestion_${inputProps.name}`}
       />
       <label htmlFor={inputProps.name}>{ labelProps.label }</label>
       { labelProps.requiredMessage && (
         <span>{ labelProps.requiredMessage }</span>
+      )}
+      {inputProps.suggestions && (
+      <datalist id={`suggestion_${inputProps.name}`}>
+        {
+          inputProps.suggestions.map((suggestion) => (
+            <option key={`suggestion_${inputProps.name}_${suggestion}`} value={suggestion}>{suggestion}</option>))
+        }
+      </datalist>
       )}
     </Container>
   );
@@ -51,7 +60,7 @@ InputField.propTypes = {
     value: PropTypes.string,
     onChange: PropTypes.func,
     required: PropTypes.bool,
-    style: PropTypes.object,
+    suggestions: PropTypes.arrayOf(PropTypes.string),
   }),
 
   labelProps: PropTypes.shape({

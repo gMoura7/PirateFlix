@@ -6,11 +6,11 @@ import Footer from '../Footer';
 import Main from './styles';
 
 function PageDefault(props) {
-  const { homepage, children } = props;
+  const { homepage, children, newCategoryBtn } = props;
 
   return (
     <>
-      <Menu />
+      <Menu newCategory={newCategoryBtn} />
       {/* Operador ternário abaixo, se tiver homepage nos props, devolve somente children
                     Caso contrario, retorna children envelopados pela tag Main. */}
       {homepage ? (
@@ -30,10 +30,12 @@ function PageDefault(props) {
 
 PageDefault.defaultProps = {
   homepage: false,
+  newCategoryBtn: false,
 };
 
 PageDefault.propTypes = {
   homepage: PropTypes.bool,
+  newCategoryBtn: PropTypes.bool,
   children: PropTypes.node.isRequired,
 };
 
