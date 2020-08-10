@@ -24,11 +24,11 @@ tbody > tr > td {
 }
 
 th.largeCell, td.largeCell {
-  width: 80vh;
+  width: 70vh;
 }
 
 th.mediumCell, td.mediumCell {
-  width: 25vh;
+  width: 20vh;
 }
 
 th.smallCell, td.smallCell {
